@@ -1,0 +1,33 @@
+create database crud_floric;
+use  crud_floric;
+
+create table cliente(
+id_cli int not null auto_increment,
+nome varchar(100) not null,
+cpf char(14) not null,
+email varchar(100) not null,
+fone char(16) not null,
+endereco varchar(100) not null,
+primary key(id_cli)
+);
+select * from cliente;
+
+create table vendedor(
+id_vend int not null auto_increment,
+nome varchar(100) not null,
+cpf char(14) not null,
+email varchar(100) not null,
+fone char(16) not null,
+primary key(id_vend)
+
+);
+
+
+
+create table flor(
+id_flor int not null auto_increment,
+nome varchar(100) not null,
+preco decimal(10,2) not null,
+qtd decimal(10,2) not null,
+primary key(id_flor)
+);
